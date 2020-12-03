@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'dbms.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'automob',
+        'NAME': 'mini-project',
         'USER': 'postgres',
-        'PASSWORD': 'spiky',
+        'PASSWORD': 'system',
         'HOST': 'localhost',
         'PORT': '5432'
     }
