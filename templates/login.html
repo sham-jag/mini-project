@@ -47,17 +47,27 @@
         <p style="color: ivory;">
          <br>
          <center><h1> Login <br></h1></center> 
-        <form>  
+        <form method='POST'>  
             <div class="container">
-                <form method="POST">
+                
                 {% csrf_token %}
-                {{form.as_p}}
-                    <button type="submit">Login</button>
-                </form>
+                <label> Username </label>         
+                <input type="text" name="username" size="15" required/> <br> <br> 
+                <label> Password </label> 
+                <input type="Password" id="password" name="password" required> <br><br> 
+                <button type="submit">Login</button>
+                
                 Don't have an account? <a href="/register" target="blank"><strong>register here</strong></a>!
             </div>   
         </form>  
-        </p>    
+        </p>
+        <div>
+            <p style="color: rgb(255, 0, 0);">
+                {% for message in messages %}
+                <h5> {{message}} </h5>
+                {% endfor %}
+            </p>
+        </div>    
     </body>    
  
 {% endblock %}

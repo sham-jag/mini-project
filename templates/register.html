@@ -60,18 +60,25 @@
                     
                 Email:  
                 <input type="email" id="email" name="email" required/> <br>    
-                <br> <br>  
+                <br>  
                 Password:  
                 <input type="Password" id="pass" name="pass" required> <br>   
-                <br> <br>  
+                <br>   
                 Re-type password:  
                 <input type="Password" id="repass" name="repass" required> <br> <br>  
                   
                  
         <button type='submit'>Submit</button>
-        Already Have An Account? <a href='#'>Login</a>
+        Already Have An Account? <a href='/login'>Login</a>
         </form>
-    </p>    
+    </p>   
+    <div>
+        <p style="color: rgb(255, 0, 0);">
+            {% for message in messages %}
+            <h5> {{message}} </h5>
+            {% endfor %}
+        </p>
+    </div> 
 </body> 
 
 
