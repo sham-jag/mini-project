@@ -5,7 +5,6 @@ from django.db import models
 
 class customer(models.Model):
     customer_id=models. IntegerField(null=True)
-    login_id=models.ForeignKey('info', on_delete=models.CASCADE)
     name=models.CharField(max_length=50, verbose_name='customer name')
     phone=models.BigIntegerField()
     address=models.CharField(max_length=100, verbose_name='customer address')
