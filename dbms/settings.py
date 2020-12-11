@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'dbms.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mini-project',
-        'USER': 'postgres',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'website',
+        'USER': 'root',
         'PASSWORD': 'system',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
        
     }
 }
