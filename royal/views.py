@@ -11,6 +11,12 @@ def index(request):
 def about(request):
     return render(request,'about.html')
 
+def carmodel(request):
+    return render(request,'carmodel.html')
+
+def carmodel_details(request):
+    return render(request,'carmodel-details.html')
+
 
 def login(request):
     if request.method == 'POST':
