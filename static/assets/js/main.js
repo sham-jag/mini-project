@@ -4,7 +4,6 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-
 !(function($) {
   "use strict";
 
@@ -148,17 +147,17 @@
     items: 1
   });
 
-  // carmodel isotope and filter
+  // Porfolio isotope and filter
   $(window).on('load', function() {
-    var carmodelIsotope = $('.carmodel-container').isotope({
+    var portfolioIsotope = $('.portfolio-container').isotope({
       layoutMode: 'fitRows'
     });
 
-    $('#carmodel-flters li').on('click', function() {
-      $("#carmodel-flters li").removeClass('filter-active');
+    $('#portfolio-flters li').on('click', function() {
+      $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
-      carmodelIsotope.isotope({
+      portfolioIsotope.isotope({
         filter: $(this).data('filter')
       });
       aos_init();
@@ -166,8 +165,8 @@
 
   });
 
-  // carmodel details carousel
-  $(".carmodel-details-carousel").owlCarousel({
+  // Portfolio details carousel
+  $(".portfolio-details-carousel").owlCarousel({
     autoplay: true,
     dots: true,
     loop: true,
